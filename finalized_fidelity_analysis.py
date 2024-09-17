@@ -8,12 +8,7 @@ Created on Tue Aug 13 16:11:17 2024
 
 import pandas as pd
 from Bio import SeqIO
-#from Bio.pairwise2 import format_alignment as pairwise2
-#from Bio import SeqRecord
-#from Bio import Seq
 import numpy as np
-#import seaborn as sns
-#from matplotlib import pyplot as plt
 
 ### forward and reverse reference sequences
 total_ref1 = "ACAGCTAAATGGCGTTGTTCAAGCCCTACCCAAAGATTGGCGATATTCGTAAGGCGCGCTGCATGTTGCAGCACACCTTGCACCACCGGACCAACAAGCAGCCCAGCTACCGCAGGAGGTTGAAGACCCTCATCCCCCTCTTCAGGCGGTGCATGCTCGGCTCCGGTT"
@@ -84,10 +79,7 @@ mutations['C'] = C_subs.sum(axis=1)
 
 ### total bases analyzed
 
-#rows = len(forward_reads_df_sub_2.axes[0])
-#cols = len(forward_reads_df_sub_2.axes[1])
 number_of_reads = sum(factor_list)
-#total_bases = number_of_reads*cols
 
 ### gotta calculate the total number of C's T's A's and G's
 
